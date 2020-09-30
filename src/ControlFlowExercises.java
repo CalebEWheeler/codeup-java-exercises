@@ -43,34 +43,34 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-        for (int i = 1; i <= 100; i++) {
-            if(i %3 == 0 & i %5 ==0) {
-                System.out.println("FizzBuzz");
-            }
-            else if(i %3 == 0) {
-                System.out.println("Fizz");
-            }
-            else if(i %5 ==0) {
-                System.out.println("Buzz");
-            }
-            else {
-                System.out.println(i);
-            }
-        }
-
-//        Scanner scanner = new Scanner(System.in);
-
-
-//        System.out.println("What number would you like to go up to?");
-//        int userInput = Integer.parseInt(scanner.nextLine());
-//
-//        String tableHead = "number | squared | cubed\n" + "------ | ------- | -----\n";
-//        System.out.printf("%s",tableHead);
-//        for (int i = 1; i <= userInput; i++) {
-//            int iSquared = i * i; //why do these two variables have to be in the loop to increment both i's?
-//            int iCubed = i * iSquared;
-//            System.out.printf("%d      | %d       | %d\n", i, iSquared, iCubed);
+//        for (int i = 1; i <= 100; i++) {
+//            if(i %3 == 0 & i %5 ==0) {
+//                System.out.println("FizzBuzz");
+//            }
+//            else if(i %3 == 0) {
+//                System.out.println("Fizz");
+//            }
+//            else if(i %5 ==0) {
+//                System.out.println("Buzz");
+//            }
+//            else {
+//                System.out.println(i);
+//            }
 //        }
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("What number would you like to go up to?");
+        int userInput = Integer.parseInt(scanner.nextLine());
+
+        String tableHead = "number | squared | cubed\n" + "------ | ------- | -----\n";
+        System.out.printf("%s",tableHead);
+        for (int i = 1; i <= userInput; i++) {
+            int iSquared = i * i; //why do these two variables have to be in the loop to increment both i's?
+            int iCubed = i * iSquared;
+            System.out.printf("%d      | %d       | %d\n", i, iSquared, iCubed);
+        }
 
 //        System.out.println("Please enter a number between 0-100");
 //        int userInput = Integer.parseInt(scanner.nextLine());
