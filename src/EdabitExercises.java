@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class EdabitExercises {
+public class EdabitExercises {
+    public static boolean returnTrue() {
+        return true;
+
+    }
+
+
 }

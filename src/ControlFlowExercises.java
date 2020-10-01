@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//refactor if/else statements to utilize switch method instead after lecture
 public class ControlFlowExercises {
     public static void main(String [] args) {
 
