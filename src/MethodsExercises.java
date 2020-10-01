@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static void main(String [] args) {
         System.out.println("Output of addition(): " + addition(2,3));
@@ -6,6 +8,8 @@ public class MethodsExercises {
         System.out.println("Output of division(): " + division(1,0));
         System.out.println("Output of remainder(): " + remainder(3,10));
         System.out.println("Output of Bonus: " + multiplication2(5,3));
+
+        System.out.println(getInteger(1, 10));
     }
 
     public static int addition(int a, int b) {
@@ -33,9 +37,17 @@ public class MethodsExercises {
 //        }
 //        return result;
 
-
         if ((a == 0) || (b == 0)) return 0;
         else return (a + multiplication2(a, b - 1));
 
+    }
+
+    public static int getInteger(int min, int max) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = sc.nextInt();
+        if (userInput > max) return getInteger(min, max);
+        else if (userInput < min) return getInteger(min, max);
+        else return userInput;
     }
 }
