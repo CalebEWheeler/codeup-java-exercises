@@ -27,6 +27,23 @@ public class EdabitExercises {
         }
     }
 
-    //4.
+    //4. Create a function that returns true when x is equal to y; otherwise return false.
+    public class Program {
+        public static boolean isSameNum(int x, int y) {
+            if (x == y) return true;
+            else return false;
+        }
+    }
+
+    //5. Create a function that finds the maximum range of a triangle's third edge,
+    // where the side lengths are all integers.
+    public class Challenge {
+        public static int nextEdge(int side1, int side2) {
+            int maxEdge = ((side1 + side2) - 1);
+            return maxEdge;
+        }
+    }
+
+    //6.
 
 }

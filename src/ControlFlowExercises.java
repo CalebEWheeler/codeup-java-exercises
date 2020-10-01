@@ -77,7 +77,7 @@ public class ControlFlowExercises {
         System.out.print("Continue? [yes/no] ");
 
         String userConfirm = scanner.next();
-        boolean confirmation = userConfirm.equals("yes"); //how to write a condition that will take y || yes || Yes.
+        boolean confirmation = userConfirm.equals("yes");
         boolean no = userConfirm.equals("no");
         if (confirmation) {
             for (int i = 0; i <= 100; i++ ) {
@@ -85,7 +85,7 @@ public class ControlFlowExercises {
                 else if (userInput >= 60 && userInput <= 62 && i == userInput) System.out.println("You received a D-");
                 else if (userInput >= 63 && userInput <= 66 && i == userInput) System.out.println("You received a D");
                 else if (userInput >= 67 && userInput <= 69 && i == userInput) System.out.println("You received a D+");
-                else if (userInput >= 70 && userInput <= 72 && i == userInput) System.out.println("You received a C-");                else if (userInput >= 67 && userInput <= 79 && i == userInput) System.out.println("You received a C");
+                else if (userInput >= 70 && userInput <= 72 && i == userInput) System.out.println("You received a C-");
                 else if (userInput >= 73 && userInput <= 76 && i == userInput) System.out.println("You received a C");
                 else if (userInput >= 77 && userInput <= 79 && i == userInput) System.out.println("You received a C+");
                 else if (userInput >= 80 && userInput <= 82 && i == userInput) System.out.println("You received a B-");
