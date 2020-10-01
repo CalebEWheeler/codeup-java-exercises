@@ -27,10 +27,15 @@ public class MethodsExercises {
     //BONUS: create a multiplication method without the "*" operator.
     //       Then refactor it to utilize recursion
     public static int multiplication2(int a, int b) {
-        int result = 0;
-        for (int i = 0; i < b; i++) {
-            result += a;
-        }
-        return result;
+//        int result = 0;
+//        for (int i = 0; i < b; i++) {
+//            result += a;
+//        }
+//        return result;
+
+
+        if ((a == 0) || (b == 0)) return 0;
+        else return (a + multiplication2(a, b - 1));
+
     }
 }
