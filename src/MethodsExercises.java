@@ -5,7 +5,7 @@ public class MethodsExercises {
         System.out.println("Output of multiplication(): " + multiplication(2,3));
         System.out.println("Output of division(): " + division(1,0));
         System.out.println("Output of remainder(): " + remainder(3,10));
-
+        System.out.println("Output of Bonus: " + multiplication2(5,3));
     }
 
     public static int addition(int a, int b) {
@@ -24,6 +24,13 @@ public class MethodsExercises {
         return a % b;
     }
 
-    //BONUS: refactor the above methods to utilize recursion
-
+    //BONUS: create a multiplication method without the "*" operator.
+    //       Then refactor it to utilize recursion
+    public static int multiplication2(int a, int b) {
+        int result = 0;
+        for (int i = 0; i < b; i++) {
+            result += a;
+        }
+        return result;
+    }
 }
