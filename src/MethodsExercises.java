@@ -46,8 +46,10 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = sc.nextInt();
-        if (userInput > max) return getInteger(min, max);
-        else if (userInput < min) return getInteger(min, max);
-        else return userInput;
+//        if (userInput > max) return getInteger(min, max);
+//        else if (userInput < min) return getInteger(min, max);
+//        else return userInput;
+        if ((userInput > min) && (userInput < max)) return userInput;
+        else return getInteger(min, max);
     }
 }
