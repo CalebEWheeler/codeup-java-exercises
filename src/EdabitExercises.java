@@ -19,5 +19,14 @@ public class EdabitExercises {
         }
     }
 
-    //3.
+    //3. Create a function that takes length and width and finds the perimeter of a rectangle.
+    public class Challenge {
+        public static int findPerimeter(int length, int width) {
+            int perimeter = ((length * 2)+(width * 2));
+            return perimeter;
+        }
+    }
+
+    //4.
+
 }
