@@ -80,6 +80,16 @@ public class EdabitExercises {
         return fpm;
     }
 
+    //11. Given two numbers, return true if the sum of both numbers is less than 100.
+    // Otherwise return false.
+    public static boolean lessThanHundred(int a, int b) {
+        int sum = a + b;
+        if (sum < 100) return true;
+        else return false;
+    }
+
+    //12.
+
 
 
 }
