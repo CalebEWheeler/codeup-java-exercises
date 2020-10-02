@@ -11,7 +11,8 @@ public class MethodsExercises {
 
 //        System.out.println(getInteger(1, 10));
 //        System.out.println(getFactorialNum());
-        diceGame();
+//        diceGame();
+        dice();
     }
 
     public static int addition(int a, int b) {
@@ -107,5 +108,45 @@ public class MethodsExercises {
         double secondDie = (Math.floor(Math.random() * n));
         double[] dice = new double[]{firstDie, secondDie};
         return dice;
+    }
+
+
+    //Cruzanio's Dice Game
+    public static int randomizer(int min, int max) {
+        int range = (max - min) + 1;
+        return (int) (Math.random() * range) + min;
+    }
+    public static void results(int die1, int die2) {
+        int dieResult1 = randomizer(1, die1);
+        int dieResult2 = randomizer(1, die2);
+//        String combinedResults = "Die 1 result: "+dieResult1+"\nDie 2 result: "+dieResult2;
+        System.out.println("Die 1 result: "+dieResult1);
+        System.out.println("Die 2 result: "+dieResult2);
+        System.out.println("Roll again? [y/N]");
+        Scanner toRollAgain = new Scanner(System.in);
+        String rollAgain = toRollAgain.nextLine();
+        if (rollAgain.equalsIgnoreCase("y")) {
+            results(die1, die2);
+        } else {
+            System.out.println("Would you like to pick new die? [y/N]");
+            if (toRollAgain.nextLine().equalsIgnoreCase("y")) {
+                dice();
+            }
+        }
+    }
+    public static void dice() {
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Enter number of sides for Die 1: ");
+        int die1 = userInput.nextInt();
+        System.out.print("Enter number of sides for Die 2: ");
+        int die2 = userInput.nextInt();
+        System.out.print("Type 'roll' to roll the dice: ");
+        userInput.nextLine();
+        String answerToRoll = userInput.nextLine();
+        if (answerToRoll.isEmpty() || !answerToRoll.equalsIgnoreCase("roll")) {
+            dice();
+        } else {
+            results(die1, die2);
+        }
     }
 }
