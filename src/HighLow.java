@@ -9,6 +9,7 @@ public class HighLow {
         int random = randomizer(0, 100);
         int tries = 6;
         System.out.println("Guess a number between 0-100: ");
+        System.out.print(random);
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < tries; i++) {
         int enteredNum = Integer.parseInt(sc.nextLine());
@@ -19,7 +20,7 @@ public class HighLow {
                 else if (enteredNum > random && tries - 1 > i) System.out.println("LOWER: Guess again!");
                 else if (i == tries - 1) {
                     System.out.println("You're all out of tries!\nWould you like to play again? [yes/no]");
-                    String playAgain = sc.next();
+                    String playAgain = sc.nextLine();
                     boolean yes = playAgain.equals("yes");
                     boolean no = playAgain.equals("no");
                     if (yes) {
@@ -29,10 +30,12 @@ public class HighLow {
                 }
                 else if (enteredNum == random) {
                     System.out.println("GOOD GUESS, YOU WIN!\nWould you like to play again? [yes/no]");
-                    String playAgain = sc.next();
+                    String playAgain = sc.nextLine();
                     boolean yes = playAgain.equals("yes");
                     boolean no = playAgain.equals("no");
-                    if (yes) guessGame();
+                    if (yes) {
+                        guessGame();
+                    }
                     else if (no) System.out.println("Bummer, I wanted to settle the score..");
                 }
             }
@@ -44,10 +47,3 @@ public class HighLow {
         return (int) (Math.random() * range) + min;
     }
 }
-
-//    Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-//        at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-//        at java.base/java.lang.Integer.parseInt(Integer.java:662)
-//        at java.base/java.lang.Integer.parseInt(Integer.java:770)
-//        at HighLow.guessGame(HighLow.java:14)
-//        at HighLow.main(HighLow.java:5)
