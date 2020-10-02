@@ -13,6 +13,9 @@ public class EdabitExercises {
         System.out.println("The output of problem 8: " + helloName("Caleb"));
         System.out.println("The output of problem 9: " + remainder(7,9));
         System.out.println("The output of problem 10: " + frames(1, 60));
+        System.out.println("The output of problem 11: " + lessThanHundred(20,33));
+        System.out.println("The output of problem 12: " + animals(2,3,6));
+
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -88,7 +91,20 @@ public class EdabitExercises {
         else return false;
     }
 
-    //12.
+    //12. In this challenge, a farmer is asking you to tell him how many legs can be counted
+    // among all his animals. The farmer breeds three species:
+            //- chickens = 2 legs
+            //- cows = 4 legs
+            //- pigs = 4 legs
+    //The farmer has counted his animals and he gives you a subtotal for each species.
+    // You have to implement a function that returns the total number of legs of all the animals.
+    public static int animals(int chickens, int cows, int pigs) {
+        int chickenLegs = 2;
+        int cowLegs = 4;
+        int pigLegs = 4;
+        int sumOfLegs = ((chickens * 2) + (cows * 4) + (pigs * 4));
+        return sumOfLegs;
+    }
 
 
 
