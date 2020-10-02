@@ -12,6 +12,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 7: " + triArea(5,9));
         System.out.println("The output of problem 8: " + helloName("Caleb"));
         System.out.println("The output of problem 9: " + remainder(7,9));
+        System.out.println("The output of problem 10: " + frames(1, 60));
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -74,7 +75,10 @@ public class EdabitExercises {
 
     //10. Create a method that returns the number of frames shown in a given number of
     // minutes for a certain FPS.
-
+    public static int frames(int min, int fps) {
+        int fpm = (fps * 60) * min;
+        return fpm;
+    }
 
 
 
