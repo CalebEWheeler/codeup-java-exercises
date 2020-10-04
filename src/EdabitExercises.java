@@ -19,7 +19,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 14: " + howManySeconds(2));
         System.out.println("The output of problem 15: " + divisibleByFive(5));
         System.out.println("The output of problem 16: " + reverse(true));
-        System.out.println("The output of problem 17: " + );
+        System.out.println("The output of problem 17: " + convert(3));
+        System.out.println("The output of problem 18: " + );
 
     }
 
@@ -136,5 +137,11 @@ public class EdabitExercises {
         else return true;
     }
 
-    //17.
+    //17. Write a function that takes an integer minutes and converts it to seconds.
+    public static int convert(int minutes) {
+        int toSeconds = minutes * 60;
+        return toSeconds;
+    }
+
+
 }
