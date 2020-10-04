@@ -17,6 +17,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 12: " + animals(2,3,6));
         System.out.println("The output of problem 13: " + giveMeSomething("another something."));
         System.out.println("The output of problem 14: " + howManySeconds(2));
+        System.out.println("The output of problem 15: " + divisibleByFive(5));
 
 
     }
@@ -119,6 +120,13 @@ public class EdabitExercises {
     public static int howManySeconds(int hours) {
         int seconds = (hours * 60) * 60;
         return seconds;
+    }
+
+    //15. Create a function that returns true if an integer is evenly divisible by 5,
+    // and false otherwise.
+    public static boolean divisibleByFive(int num) {
+        if (num % 5 == 0) return true;
+        else return false;
     }
 
 
