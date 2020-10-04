@@ -18,7 +18,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 13: " + giveMeSomething("another something."));
         System.out.println("The output of problem 14: " + howManySeconds(2));
         System.out.println("The output of problem 15: " + divisibleByFive(5));
-
+        System.out.println("The output of problem 16: " + reverse(true));
+        System.out.println("The output of problem 17: " + );
 
     }
 
@@ -129,5 +130,11 @@ public class EdabitExercises {
         else return false;
     }
 
+    //16. Create a function that reverses a boolean value.
+    public static boolean reverse(boolean b) {
+        if (b == true) return false;
+        else return true;
+    }
 
+    //17.
 }
