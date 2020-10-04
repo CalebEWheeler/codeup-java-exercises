@@ -20,8 +20,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 15: " + divisibleByFive(5));
         System.out.println("The output of problem 16: " + reverse(true));
         System.out.println("The output of problem 17: " + convert(3));
-        System.out.println("The output of problem 18: " + );
-
+        System.out.println("The output of problem 18: " + intWithinBounds(3,3,9));
+        System.out.println("The output of problem 19: " + );
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -142,6 +142,20 @@ public class EdabitExercises {
         int toSeconds = minutes * 60;
         return toSeconds;
     }
+
+    //18. Create a function that validates whether an integer n is exclusively within
+    // the lower and upper bounds.
+    public static boolean intWithinBounds(int n, int lower, int upper) {
+        if (n >= lower && n < upper) return true;
+        else return false;
+    }
+
+    //19.
+
+
+
+
+
 
 
 }
