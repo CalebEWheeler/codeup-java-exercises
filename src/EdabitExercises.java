@@ -21,7 +21,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 16: " + reverse(true));
         System.out.println("The output of problem 17: " + convert(3));
         System.out.println("The output of problem 18: " + intWithinBounds(3,3,9));
-        System.out.println("The output of problem 19: " + );
+        System.out.println("The output of problem 19: " + profitableGamble(2,3,6));
+        System.out.println("The output of problem 20: " + );
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -150,8 +151,15 @@ public class EdabitExercises {
         else return false;
     }
 
-    //19.
+    //19. Create a function that takes three arguments prob,
+    // prize, pay and returns true if prob * prize > pay;
+    // otherwise return false.
+    public static boolean profitableGamble(double prob, double prize, double pay) {
+        if (prob * prize > pay) return true;
+        else return false;
+    }
 
+    //20.
 
 
 
