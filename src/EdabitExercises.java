@@ -15,6 +15,9 @@ public class EdabitExercises {
         System.out.println("The output of problem 10: " + frames(1, 60));
         System.out.println("The output of problem 11: " + lessThanHundred(20,33));
         System.out.println("The output of problem 12: " + animals(2,3,6));
+        System.out.println("The output of problem 13: " + giveMeSomething("another something."));
+        System.out.println("The output of problem 14: " + howManySeconds(2));
+
 
     }
 
@@ -110,6 +113,12 @@ public class EdabitExercises {
     // and the given argument a.
     public static String giveMeSomething(String a) {
         return String.format("something %s", a);
+    }
+
+    //14. Write a function that converts hours into seconds.
+    public static int howManySeconds(int hours) {
+        int seconds = (hours * 60) * 60;
+        return seconds;
     }
 
 
