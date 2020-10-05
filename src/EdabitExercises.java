@@ -26,6 +26,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 20: " + getFirstValue(arr));
         System.out.println("The output of problem 21: " + squared(2));
         System.out.println("The output of problem 22: " + convert(3, 5));
+        System.out.println("The output of problem 23: " + addition(3));
 
     }
 
@@ -181,6 +182,13 @@ public class EdabitExercises {
         return hoursToSeconds + minutesToSeconds;
     }
 
+    //23. Create a function that takes a number as an argument, increments the number by +1
+    // and returns the result.
+    public static int addition(int num) {
+        return num + 1;
+    }
+
+    //24.
 
 
 
