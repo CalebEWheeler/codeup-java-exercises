@@ -24,6 +24,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 19: " + profitableGamble(2,3,6));
         int[] arr = {0,4,2,3};
         System.out.println("The output of problem 20: " + getFirstValue(arr));
+        System.out.println("The output of problem 21: " + squared(2));
+
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -165,7 +167,10 @@ public class EdabitExercises {
         return arr[0];
     }
 
-    //21.
+    //21. Fix the code in the code tab to pass this challenge (only syntax errors).
+    public static int squared(int a) {
+        return a * a;
+    }
 
 
 
