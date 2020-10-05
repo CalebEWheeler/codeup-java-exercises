@@ -10,7 +10,7 @@ public class MethodsExercises {
 //        System.out.println("Output of Bonus: " + multiplication2(5,3));
 
 //        System.out.println(getInteger(1, 10));
-//        System.out.println(getFactorialNum());
+        System.out.println(getFactorialNum());
 //        diceGame();
         dice();
     }

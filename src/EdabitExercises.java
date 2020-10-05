@@ -188,7 +188,8 @@ public class EdabitExercises {
         return num + 1;
     }
 
-    //24.
+    //24. Create a function that returns true if there's at least one prime number
+    // in the given range (n1 to n2), false otherwise.
 
 
 

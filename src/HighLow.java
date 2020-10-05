@@ -9,7 +9,7 @@ public class HighLow {
         int random = randomizer(0, 100);
         int tries = 6;
         System.out.println("Guess a number between 0-100: ");
-        System.out.print(random);
+//        System.out.print(random);
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < tries; i++) {
         int enteredNum = Integer.parseInt(sc.nextLine());
