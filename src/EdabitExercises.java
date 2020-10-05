@@ -25,6 +25,7 @@ public class EdabitExercises {
         int[] arr = {0,4,2,3};
         System.out.println("The output of problem 20: " + getFirstValue(arr));
         System.out.println("The output of problem 21: " + squared(2));
+        System.out.println("The output of problem 22: " + convert(3, 5));
 
     }
 
@@ -172,6 +173,13 @@ public class EdabitExercises {
         return a * a;
     }
 
+    //22. Write a function that takes two integers (hours, minutes), converts them to seconds,
+    // and adds them.
+    public static int convert(int hours, int minutes) {
+        int hoursToSeconds = (hours * 60) * 60;
+        int minutesToSeconds = minutes * 60;
+        return hoursToSeconds + minutesToSeconds;
+    }
 
 
 
