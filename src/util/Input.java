@@ -5,9 +5,11 @@ public class Input {
     String getString() {
         return scanner.nextLine();
     }
-//    boolean yesNo() {
-//
-//    }
+    boolean yesNo() {
+        String input = scanner.nextLine();
+        if (input.equals("y") || input.equalsIgnoreCase("yes") || input.startsWith("Y")) return true;
+        else return false;
+    }
 //    int getInt(int min, int max) {
 //
 //    }
@@ -20,8 +22,10 @@ public class Input {
 
     public static void main(String[] args) {
         Input userInput = new Input();
-        System.out.println("Enter a string: ");
-        System.out.println(userInput.getString());
+//        System.out.println("Enter a string: ");
+//        System.out.println(userInput.getString());
+        System.out.println("Enter: y/yes/Yes/YES or enter no");
+        System.out.println(userInput.yesNo());
 
     }
 
