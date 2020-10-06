@@ -1,23 +1,16 @@
 package shapes;
-import java.util.Scanner;
 
 public class Circle {
-    private int radius;
+    private double radius;
 
-    public double getRadius() {
-        System.out.println("Please enter a radius to get started");
-        Scanner scanner = new Scanner(System.in);
-        radius = scanner.nextInt();
-        double r = radius;
-        return r;
+
+    public Circle(double rad) {
+        this.radius = rad;
     }
-//    public Circle(double radius) {
-//
-//    }
-//    public double getArea() {
-//
-//    }
-//    public double getCircumference() {
-//
-//    }
+    public double getArea() {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+    public double getCircumference() {
+        return (Math.PI * 2) * this.radius;
+    }
 }

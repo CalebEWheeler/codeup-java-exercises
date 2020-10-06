@@ -1,7 +1,5 @@
 package util;
-import shapes.Circle;
 import java.util.Scanner;
-
 
 public class Input {
     //MY ORIGINAL SCANNER
@@ -67,14 +65,6 @@ public class Input {
         public double getDouble () {
             String input = scanner.nextLine();
             return Double.parseDouble(input);
-        }
-
-        //Circle.class portion
-        public static void getInfo () {
-
-
-
-
         }
 
 }

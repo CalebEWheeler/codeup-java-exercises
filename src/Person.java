@@ -1,10 +1,10 @@
 public class Person {
-
-
         private String name;
-    public Person(String personName) {
+
+        public Person(String personName) {
         this.name = personName;
     }
+
         public String getName () {
 //TODO: return the person's name
             return this.name;
@@ -16,7 +16,7 @@ public class Person {
         }
         public void sayHello () {
 //TODO: print a message to the console using the person's name
-            System.out.printf("Hello, my name is %s!", this.getName());
+            System.out.printf("Hello, my name is %s!", this.name);
         }
 
     public static void main(String[] args) {
