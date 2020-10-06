@@ -16,9 +16,12 @@ public class Input {
         if (input >= min && input <= max) return input;
         else return getInt(1, 10);
     }
-//    double getDouble(double min, double max) {
-//
-//    }
+    double getDouble(double min, double max) {
+        System.out.println("Please enter a number between 5-15");
+        double input = scanner.nextDouble();
+        if (input >= min && input <= max) return input;
+        else return getDouble(5.7, 15.7);
+    }
 //    double getDouble() {
 //
 //    }
@@ -30,7 +33,7 @@ public class Input {
 //        System.out.println("Enter: y/yes/Yes/YES or enter no");
 //        System.out.println(userInput.yesNo());
         System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
-
+        System.out.println(userInput.getDouble(5.7, 15.7) + ": is a valid input!");
     }
 
 }
