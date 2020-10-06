@@ -13,5 +13,9 @@ public class DishTest {
         dish1.printSummary();
         dish2.printSummary();
 
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
     }
+
 }
