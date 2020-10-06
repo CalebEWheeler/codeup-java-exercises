@@ -36,15 +36,6 @@ public class Input {
 
     }
 
-//    public static void main(String[] args) {
-//        Input userInput = new Input();
-//        System.out.println("Enter a string: ");
-//        System.out.println(userInput.getString());
-//        System.out.println("Enter: y/yes/Yes/YES or enter no");
-//        System.out.println(userInput.yesNo());
-//        System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
-//        System.out.println(userInput.getDouble(5.7, 15.7) + ": is a valid input!");
-//        System.out.println(userInput.getDouble() + ": is a valid input!");
-//    }
+
 
 }
