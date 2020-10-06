@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class Input {
     private Scanner scanner = new Scanner(System.in);
     String getString() {
+        System.out.println("Enter a string: ");
         return scanner.nextLine();
     }
     boolean yesNo() {
+        System.out.println("Enter: y/yes/Yes/YES or enter no");
         String input = scanner.nextLine();
         if (input.equals("y") || input.equalsIgnoreCase("yes") || input.startsWith("Y")) return true;
         else return false;
@@ -34,15 +36,15 @@ public class Input {
 
     }
 
-    public static void main(String[] args) {
-        Input userInput = new Input();
+//    public static void main(String[] args) {
+//        Input userInput = new Input();
 //        System.out.println("Enter a string: ");
 //        System.out.println(userInput.getString());
 //        System.out.println("Enter: y/yes/Yes/YES or enter no");
 //        System.out.println(userInput.yesNo());
 //        System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
 //        System.out.println(userInput.getDouble(5.7, 15.7) + ": is a valid input!");
-        System.out.println(userInput.getDouble() + ": is a valid input!");
-    }
+//        System.out.println(userInput.getDouble() + ": is a valid input!");
+//    }
 
 }
