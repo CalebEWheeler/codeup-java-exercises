@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Input {
     private Scanner scanner = new Scanner(System.in);
     String getString() {
-
+        return scanner.nextLine();
     }
 //    boolean yesNo() {
 //
@@ -20,6 +20,7 @@ public class Input {
 
     public static void main(String[] args) {
         Input userInput = new Input();
+        System.out.println("Enter a string: ");
         System.out.println(userInput.getString());
 
     }
