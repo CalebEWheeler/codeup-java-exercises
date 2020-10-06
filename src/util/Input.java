@@ -10,9 +10,12 @@ public class Input {
         if (input.equals("y") || input.equalsIgnoreCase("yes") || input.startsWith("Y")) return true;
         else return false;
     }
-//    int getInt(int min, int max) {
-//
-//    }
+    int getInt(int min, int max) {
+        System.out.println("Please enter a number between 1-10");
+        int input = scanner.nextInt();
+        if (input >= min && input <= max) return input;
+        else return getInt(1, 10);
+    }
 //    double getDouble(double min, double max) {
 //
 //    }
@@ -24,8 +27,9 @@ public class Input {
         Input userInput = new Input();
 //        System.out.println("Enter a string: ");
 //        System.out.println(userInput.getString());
-        System.out.println("Enter: y/yes/Yes/YES or enter no");
-        System.out.println(userInput.yesNo());
+//        System.out.println("Enter: y/yes/Yes/YES or enter no");
+//        System.out.println(userInput.yesNo());
+        System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
 
     }
 
