@@ -22,9 +22,17 @@ public class Input {
         if (input >= min && input <= max) return input;
         else return getDouble(5.7, 15.7);
     }
-//    double getDouble() {
-//
-//    }
+    double getDouble() {
+        System.out.println("Please enter two numbers: ");
+        double input1 = scanner.nextDouble();
+        double input2 = scanner.nextDouble();
+        System.out.println("Please enter a number that is between the " +
+                "two numbers you entered earlier.");
+        double input3 = scanner.nextDouble();
+        if (input3 >= input1 && input3 <= input2) return input3;
+        else return getDouble();
+
+    }
 
     public static void main(String[] args) {
         Input userInput = new Input();
@@ -32,8 +40,9 @@ public class Input {
 //        System.out.println(userInput.getString());
 //        System.out.println("Enter: y/yes/Yes/YES or enter no");
 //        System.out.println(userInput.yesNo());
-        System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
-        System.out.println(userInput.getDouble(5.7, 15.7) + ": is a valid input!");
+//        System.out.println(userInput.getInt(1, 10) + ": is a valid input!");
+//        System.out.println(userInput.getDouble(5.7, 15.7) + ": is a valid input!");
+        System.out.println(userInput.getDouble() + ": is a valid input!");
     }
 
 }
