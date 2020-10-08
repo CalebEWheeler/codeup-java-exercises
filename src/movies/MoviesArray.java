@@ -105,12 +105,4 @@ public class MoviesArray {
             new Movie("Yankee Doodle Dandy", "musical")
         };
     }
-
-    public static void main(String[] args) {
-        //successfully prints out the reference ID of each movie
-        // (WHICH MEANS I AM ACCESSING IT CORRECTLY) now translate it over to Movie.java...
-        for (Movie movie: MoviesArray.findAll()) {
-            System.out.println(movie.toString());
-        }
-    }
 }

@@ -20,10 +20,4 @@ public class Movie {
         this.category = movieCategory;
     }
 
-    public static void main(String[] args) {
-        //4. Print out the constructed Movie from MoviesArray
-        for (Movie movie: MoviesArray.findAll()) {
-            System.out.println(movie.getName() + " -- " + movie.getCategory());
-        }
-    }
 }
