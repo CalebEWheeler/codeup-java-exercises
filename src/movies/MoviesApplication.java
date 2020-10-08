@@ -2,11 +2,11 @@ package movies;
 import util.Input;
 
 public class MoviesApplication {
+    //Storing MoviesArray.findAll() to this class as the array movies;
+    static Movie[] movies = MoviesArray.findAll();
 
     public static void main(String[] args) {
         Input userInput = new Input();
-        //Storing MoviesArray.findAll() to this class as the array movies;
-        Movie[] movies = MoviesArray.findAll();
         System.out.println("What would you like to do?");
         System.out.println("0 - exit\n" +
                 "1 - view all movies\n" +
@@ -46,7 +46,7 @@ public class MoviesApplication {
             case 7:
                 getMovies(movies, "comedy");
                 break;
-
+            default:
         }
     }
 
