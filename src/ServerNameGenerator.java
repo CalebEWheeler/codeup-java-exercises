@@ -20,4 +20,7 @@ public class ServerNameGenerator {
         System.out.println("Here is your server name:\n" + randomAdjective() + "-" + randomNoun());
 
     }
+
+    //Fer's walkthrough
+
 }
