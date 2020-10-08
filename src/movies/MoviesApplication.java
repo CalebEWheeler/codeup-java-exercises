@@ -1,6 +1,5 @@
 package movies;
 import util.Input;
-import java.util.Arrays;
 
 public class MoviesApplication {
 
@@ -18,49 +17,13 @@ public class MoviesApplication {
                 "6 - view movies in the musical category\n" +
                 "7 - view movies in the comedy category\n" +
                 "\nEnter your choice: ");
-//        Scanner scanner = new Scanner(System.in);
-//        String userInput = scanner.next();
 
-//        boolean exit = userInput.equals("0");
-//        boolean viewAll = userInput.equals("1");
-//        boolean viewAnimated = userInput.equals("2");
-//        boolean viewDrama = userInput.equals("3");
-//        boolean viewHorror = userInput.equals("4");
-//        boolean viewScifi = userInput.equals("5");
-
-//        if (exit) System.out.println("Goodbye");
-//        else if (viewAll) {
-//            for (Movie movie : MoviesArray.findAll()) {
-//                System.out.println(movie.getName() + " -- " + movie.getCategory());
-//            }
-//        } else if (viewAnimated) {
-//            for (Movie movie : MoviesArray.findAll()) {
-//                if(movie.getCategory().equals("animated"))
-//                System.out.println(movie.getName() + " -- " + movie.getCategory());
-//            }
-//        }
-//        else if (viewDrama) {
-//            for (Movie movie : MoviesArray.findAll()) {
-//                if(movie.getCategory().equals("drama"))
-//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
-//            }
-//        }
-//        else if (viewHorror) {
-//            for (Movie movie : MoviesArray.findAll()) {
-//                if(movie.getCategory().equals("horror"))
-//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
-//            }
-//        }
-//        else if (viewScifi) {
-//            for (Movie movie : MoviesArray.findAll()) {
-//                if(movie.getCategory().equals("scifi"))
-//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
-//            }
-//        }
 
         switch(userInput.getInt(0,7)) {
             case 0:
-                System.out.println("Goodbye");
+//                System.out.println("Goodbye");
+                //FER'S INTERESTING METHOD TO EXIT
+                System.exit(0);
                 break;
             case 1:
                 getMovies(movies);
@@ -101,5 +64,47 @@ public class MoviesApplication {
             }
         }
     }
+
+    //OG METHOD TO UTILIZE AN IMPORTED SCANNER AND UTILIZING IF/ELSE BLOCKS
+
+//        Scanner scanner = new Scanner(System.in);
+//        String userInput = scanner.next();
+
+//        boolean exit = userInput.equals("0");
+//        boolean viewAll = userInput.equals("1");
+//        boolean viewAnimated = userInput.equals("2");
+//        boolean viewDrama = userInput.equals("3");
+//        boolean viewHorror = userInput.equals("4");
+//        boolean viewScifi = userInput.equals("5");
+
+//        if (exit) System.out.println("Goodbye");
+//        else if (viewAll) {
+//            for (Movie movie : MoviesArray.findAll()) {
+//                System.out.println(movie.getName() + " -- " + movie.getCategory());
+//            }
+//        } else if (viewAnimated) {
+//            for (Movie movie : MoviesArray.findAll()) {
+//                if(movie.getCategory().equals("animated"))
+//                System.out.println(movie.getName() + " -- " + movie.getCategory());
+//            }
+//        }
+//        else if (viewDrama) {
+//            for (Movie movie : MoviesArray.findAll()) {
+//                if(movie.getCategory().equals("drama"))
+//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+//            }
+//        }
+//        else if (viewHorror) {
+//            for (Movie movie : MoviesArray.findAll()) {
+//                if(movie.getCategory().equals("horror"))
+//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+//            }
+//        }
+//        else if (viewScifi) {
+//            for (Movie movie : MoviesArray.findAll()) {
+//                if(movie.getCategory().equals("scifi"))
+//                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+//            }
+//        }
 }
 
