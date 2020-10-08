@@ -1,12 +1,13 @@
 package movies;
-
-import java.util.Scanner;
+import util.Input;
 import java.util.Arrays;
 
 public class MoviesApplication {
 
     public static void main(String[] args) {
-        //Confused as to how this is targeting info from elsewhere in the package
+        Input userInput = new Input();
+        //Storing MoviesArray.findAll() to this class as the array movies;
+        Movie[] movies = MoviesArray.findAll();
         System.out.println("What would you like to do?");
         System.out.println("0 - exit\n" +
                 "1 - view all movies\n" +
@@ -14,10 +15,11 @@ public class MoviesApplication {
                 "3 - view movies in the drama category\n" +
                 "4 - view movies in the horror category\n" +
                 "5 - view movies in the scifi category\n" +
+                "6 - view movies in the musical category\n" +
+                "7 - view movies in the comedy category\n" +
                 "\nEnter your choice: ");
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        String userInput = scanner.next();
-        int userInput = scanner.nextInt();
 
 //        boolean exit = userInput.equals("0");
 //        boolean viewAll = userInput.equals("1");
@@ -56,7 +58,7 @@ public class MoviesApplication {
 //            }
 //        }
 
-        switch(userInput) {
+        switch(userInput.getInt(0,7)) {
             case 0:
                 System.out.println("Goodbye");
                 break;
@@ -87,7 +89,7 @@ public class MoviesApplication {
 
     public static void getMovies(Movie[] movies) {
         for(Movie movie: movies) {
-            System.out.println(movie.getName() + "--" + movie.getCategory());
+            System.out.println(movie.getName() + " -- " + movie.getCategory());
         }
     }
 
@@ -95,7 +97,7 @@ public class MoviesApplication {
         for (Movie movie: movies) {
             String moviesCategory = movie.getCategory();
             if (moviesCategory.equalsIgnoreCase(category)) {
-                System.out.println(movie.getName() + "--" + movie.getCategory());
+                System.out.println(movie.getName() + " -- " + movie.getCategory());
             }
         }
     }
