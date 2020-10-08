@@ -14,10 +14,20 @@ public class Movie {
     public String getCategory() {
         return this.category;
     }
-    //3. Movie Constructor
+
+    //3. Movie Constructor - to create movies with two params
     public Movie(String movieName, String movieCategory) {
         this.name = movieName;
         this.category = movieCategory;
     }
 
+
+    //FER'S WALKTHROUGH SETTERS
+    public void setName(String movieName) {
+        this.name = movieName;
+    }
+
+    public void setCategory(String movieCategory) {
+        this.category = movieCategory;
+    }
 }
