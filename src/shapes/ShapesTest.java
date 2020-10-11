@@ -14,7 +14,8 @@ public class ShapesTest {
         //Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
         // - IntelliJ says shapes.Rectangle is not abstract and does not override abstract method
         //      getPerimeter(), I guess when you are implementing you have to override the methods
-        //      called in the interface.
+        //      called in the interface. Measurable is a contract, by not having the requirements for the contract(getPerimeter())
+        //      you cannot fulfill the contract.
 
         //What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
 //        System.out.println(myShape[0].getLength());
@@ -22,6 +23,7 @@ public class ShapesTest {
         // - the IDE tracks back methods created in the interface Measurable.
         //      Currently getLength and getWidth do not exist inside of the interface,
         //      therefore the IDE gives an error that states it cannot find the above methods.
+        //      In other words, getLength() & getWidth() are not in the contract, so bringing them along is a no go.
 
 
 //=========  COMMENTING OUT BELOW LINES FROM INHERITANCE AND POLYMORPHISM EXERCISE  =========//

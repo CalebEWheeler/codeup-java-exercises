@@ -28,6 +28,8 @@ public class EdabitExercises {
         System.out.println("The output of problem 22: " + convert(3, 5));
         System.out.println("The output of problem 23: " + addition(3));
         System.out.println("The output of problem 24: " + isEqual(5,5));
+        System.out.println("The output of problem 25: " + footballPoints(4,5,0));
+
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -193,8 +195,13 @@ public class EdabitExercises {
         if(num1 == num2) return true;
         else return true;
     }
-
-
+    //25. Create a function that takes the number of wins, draws and losses and
+    // calculates the number of points a football team has obtained so far.
+    public static int footballPoints(int wins, int draws, int losses) {
+        int totalPoints = (wins * 3) + draws;
+        return totalPoints;
+    }
+    //26.
 
 
 }
