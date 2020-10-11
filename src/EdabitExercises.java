@@ -27,7 +27,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 21: " + squared(2));
         System.out.println("The output of problem 22: " + convert(3, 5));
         System.out.println("The output of problem 23: " + addition(3));
-
+        System.out.println("The output of problem 24: " + isEqual(5,5));
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -188,8 +188,11 @@ public class EdabitExercises {
         return num + 1;
     }
 
-    //24. Create a function that returns true if there's at least one prime number
-    // in the given range (n1 to n2), false otherwise.
+    //24. Create a function that takes two integers and checks if they are equal.
+    public static boolean isEqual(int num1, int num2) {
+        if(num1 == num2) return true;
+        else return true;
+    }
 
 
 

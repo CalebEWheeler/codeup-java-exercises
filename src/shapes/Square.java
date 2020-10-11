@@ -7,23 +7,27 @@ public class Square extends Quadrilateral {
     }
 
     @Override
-    double setLength() {
-        return this.length;
+    public void setLength(double length) {
+        this.length = length;
+        this.width = length;
     }
 
     @Override
-    double setWidth() {
-        return this.width;
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
     }
 
     @Override
     public double getPerimeter() {
-        return (4 * this.length);
+        System.out.println("Square getPerimeter");
+        return (4 * this.getLength());
     }
 
     @Override
     public double getArea() {
-        return (Math.pow(this.width, 2));
+        System.out.println("Square getArea");
+        return (Math.pow(this.getWidth(), 2));
     }
 //=========  COMMENTING OUT BELOW LINES FROM INHERITANCE AND POLYMORPHISM EXERCISE  =========//
 //    protected int side;

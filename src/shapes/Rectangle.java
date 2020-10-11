@@ -7,23 +7,23 @@ public class Rectangle extends Quadrilateral implements Measurable {
     }
 
     @Override
-    double setLength() {
-        return this.length;
+    public void setLength(double length) {
+        this.length = length;
     }
 
     @Override
-    double setWidth() {
-        return this.width;
+    public void setWidth(double width) {
+        this.width = length;
     }
 
     @Override
     public double getPerimeter() {
-        return ((2 * this.length) + (2 * this.width));
+        return ((2 * this.getLength()) + (2 * this.getWidth()));
     }
 
     @Override
     public double getArea() {
-        return (this.length * this.width);
+        return (this.getLength() * this.getWidth());
     }
 
 //=========  COMMENTING OUT BELOW LINES FROM INHERITANCE AND POLYMORPHISM EXERCISE  =========//
