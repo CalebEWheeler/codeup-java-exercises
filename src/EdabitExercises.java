@@ -29,7 +29,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 23: " + addition(3));
         System.out.println("The output of problem 24: " + isEqual(5,5));
         System.out.println("The output of problem 25: " + footballPoints(4,5,0));
-
+        System.out.println("The output of problem 26: " + divisible(100));
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -201,7 +201,10 @@ public class EdabitExercises {
         int totalPoints = (wins * 3) + draws;
         return totalPoints;
     }
-    //26.
+    //26. Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+    public static boolean divisible(int num) {
+        return num % 100 == 0;
+    }
 
 
 }
