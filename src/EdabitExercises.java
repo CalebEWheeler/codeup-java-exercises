@@ -30,6 +30,7 @@ public class EdabitExercises {
         System.out.println("The output of problem 24: " + isEqual(5,5));
         System.out.println("The output of problem 25: " + footballPoints(4,5,0));
         System.out.println("The output of problem 26: " + divisible(100));
+        System.out.println("The output of problem 27: " + dividesEvenly(98, 9));
     }
 
     //1. All you have to do is type return true; between the curly braces { }
@@ -205,6 +206,10 @@ public class EdabitExercises {
     public static boolean divisible(int num) {
         return num % 100 == 0;
     }
-
+    //27. Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+    public static boolean dividesEvenly(int num1, int num2) {
+       float num3 = (float) num1 / (float) num2;
+        return num3 % 2 == 0;
+    }
 
 }
