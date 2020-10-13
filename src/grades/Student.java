@@ -33,6 +33,10 @@ public class Student {
         Student std2 = new Student("Bill");
         std1.addGrade(89);
         std1.addGrade(92);
-        System.out.println(std1.grades.get(0) + " " + std1.grades.get(1));
+        System.out.println(std1.getName() + "'s grades are: " + std1.grades.get(0) + ", " + std1.grades.get(1));
+        std2.addGrade(95);
+        std2.addGrade(87);
+        System.out.println(std2.getName() + "'s grades are: " + std2.grades.get(0) + ", " + std2.grades.get(1));
+
     }
 }
