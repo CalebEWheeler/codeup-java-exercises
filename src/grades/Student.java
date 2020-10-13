@@ -16,12 +16,11 @@ public class Student {
     }
 
     public double getGradeAverage() {
-        Integer addedGrades = 0;
-        for (Integer grade : grades) {
-            return addedGrades + grade;
+        double addedGrades = 0;
+        for (double grade : grades) {
+            addedGrades += grade;
         }
-        return addedGrades;
-
+        return addedGrades / this.grades.size();
     }
 
     public void setName(String name) {
@@ -37,6 +36,8 @@ public class Student {
         std2.addGrade(95);
         std2.addGrade(87);
         System.out.println(std2.getName() + "'s grades are: " + std2.grades.get(0) + ", " + std2.grades.get(1));
+        System.out.println(std1.getName() + "'s average grade is: " + std1.getGradeAverage());
+        System.out.println(std2.getName() + "'s average grade is: " + std2.getGradeAverage());
 
     }
 }
