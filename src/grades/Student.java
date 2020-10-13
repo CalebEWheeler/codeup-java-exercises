@@ -8,14 +8,18 @@ public class Student {
     public Student(String studentName) {
         this.grades = new ArrayList<>();
         this.name = studentName;
+
     }
     public String getName() {return this.name;}
-
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
     public void addGrade(int grade) {
         grades.add(grade);
     }
 
     public double getGradeAverage() {
+        ArrayList<Integer> grades = getGrades();
         double addedGrades = 0;
         for (double grade : grades) {
             addedGrades += grade;
