@@ -4,30 +4,29 @@ import java.util.HashMap;
 public class GradesApplication {
 
     public static void main(String[] args) {
-        HashMap<String, Student> students = new HashMap<String, Student>();
-        Student student1 = new Student("Caleb");
-        Student student2 = new Student("Sahara");
-        Student student3 = new Student("Cruzanio");
-        Student student4 = new Student("Cory");
+        HashMap<String, Student> students = new HashMap<>();
+        Student caleb = new Student("Caleb");
+        Student sahara = new Student("Sahara");
+        Student cruzanio = new Student("Cruzanio");
+        Student cory = new Student("Cory");
 
-        students.put("CalebEWheeler", student1);
-        students.put("saharatijol", student2);
-        students.put("cruzaniovillarreal", student3);
-        students.put("coryholley", student4);
+        caleb.addGrade(89); caleb.addGrade(82); caleb.addGrade(92);
+        sahara.addGrade(94); sahara.addGrade(81); sahara.addGrade(86);
+        cruzanio.addGrade(96); cruzanio.addGrade(93); cruzanio.addGrade(90);
+        cory.addGrade(88); cory.addGrade(99); cory.addGrade(93);
 
-        student1.addGrade(89); student1.addGrade(82); student1.addGrade(92);
-        student2.addGrade(94); student2.addGrade(81); student2.addGrade(86);
-        student3.addGrade(96); student3.addGrade(93); student3.addGrade(90);
-        student4.addGrade(88); student4.addGrade(99); student4.addGrade(93);
+        students.put("CalebEWheeler", caleb);
+        students.put("saharatijol", sahara);
+        students.put("cruzaniovillarreal", cruzanio);
+        students.put("coryholley", cory);
 
-
-        System.out.println("\n" + students);
-//        System.out.println(caleb.getGrades());
-//        System.out.println(caleb.getGradeAverage());
+        System.out.println(caleb.getName());
 
 //        System.out.println("Welcome!");
 //        System.out.println("Here are the Github usernames of out students: ");
 //        for (String username : students.get(student1))
 //        System.out.printf("|%s|  ", username);
     }
+    
+
 }

@@ -19,18 +19,18 @@ public class Student {
     }
 
     public double getGradeAverage() {
-        ArrayList<Integer> grades = getGrades();
-        double addedGrades = 0;
-        for (double grade : grades) {
-            addedGrades += grade;
-        }
-        return addedGrades / this.grades.size();
+//        ArrayList<Integer> grades = getGrades();
+//        double addedGrades = 0;
+//        for (double grade : grades) {
+//            addedGrades += grade;
+//        }
+//        return addedGrades / this.grades.size();
         //  -- Fer's Solution --
-        // double sum = 0;
-        // for (int grade : this.grades) {
-        // sum += grade;
-        //}
-        // return sum / this.grades.size();
+         double sum = 0;
+         for (int grade : this.grades) {
+         sum += grade;
+        }
+         return sum / this.grades.size();
     }
 
     public void setName(String name) {
