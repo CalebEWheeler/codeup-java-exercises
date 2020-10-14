@@ -7,6 +7,7 @@ class Accountant extends Employee {
         return "Hello my name is " + this.name + ", I work in " + this.department + ".";
     }
 
+    @Override
     public String doWork() {
         return "crunching numbers";
     }
