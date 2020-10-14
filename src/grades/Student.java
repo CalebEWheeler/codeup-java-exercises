@@ -25,6 +25,12 @@ public class Student {
             addedGrades += grade;
         }
         return addedGrades / this.grades.size();
+        //  -- Fer's Solution --
+        // double sum = 0;
+        // for (int grade : this.grades) {
+        // sum += grade;
+        //}
+        // return sum / this.grades.size();
     }
 
     public void setName(String name) {
