@@ -7,7 +7,7 @@ public class Input {
 //    private Scanner scanner = new Scanner(System.in);
     private Scanner scanner;
 
-//    added Input() and placed everything into it
+    //    added Input() and placed everything into it
     public Input() {
         //NEW SCANNER GENERATED
         this.scanner = new Scanner(System.in);
@@ -35,63 +35,85 @@ public class Input {
 
     //PLAY WITH DIFFERENCE BETWEEN parseInt() and valueOf()
     //REFACTORING getInt() and getDouble() to include try/catch methods
+    public int getInt() {
+        return getInt("Please enter an Integer.");
+    }
+
     public int getInt(int min, int max) {
         //Daniel's method
-        try {
-            while (true) {
-                System.out.printf("Please enter an integer between %d and %d.\n", min, max);
+        while (true) {
+            System.out.printf("Please enter an integer between %d and %d.\n", min, max);
+            int num;
+            try {
 
                 String input = scanner.nextLine();
-                int num = Integer.parseInt(input);
-                if (num >= min && num <= max)
-                    return num;
+                num = Integer.parseInt(input);
+            } catch (RuntimeException re) {
+                System.err.println("You must enter an integer.");
+                return getInt(min, max);
             }
-        } catch (NumberFormatException nfex) {
-            System.out.println(nfex.getMessage());
-            return getInt(min, max);
+            if (num >= min && num <= max)
+                return num;
         }
     }
 
-    public int getInt() {
-        try {
-            String input = scanner.nextLine();
-            int num = Integer.parseInt(input);
-            return num;
-        } catch (NumberFormatException nfex) {
-            System.out.println(nfex.getMessage());
-            return getInt();
-        }
-    }
+//    public int getInt() {
+//        try {
+//            String input = scanner.nextLine();
+//            int num = Integer.parseInt(input);
+//            return num;
+//        } catch (NumberFormatException nfex) {
+//            System.out.println(nfex.getMessage());
+//            return getInt();
+//        }
+//    }
 
     public int getInt(String prompt) {
+        System.out.println(prompt);
+        String input = scanner.nextLine();
+
+        int num;
         try {
-            System.out.println(Integer.parseInt(prompt));
-            return getInt();
+            num = Integer.parseInt(input);
         } catch (NumberFormatException nfex) {
-            System.out.println(nfex.getMessage());
-            return getInt();
+            System.err.println("You must enter an integer.");
+            return getInt(prompt);
         }
+        return num;
     }
 
-    public double getDouble(double min, double max) {
-//            System.out.println("Please enter a number between 5.7-15.7");
-//            double input = scanner.nextDouble();
-//            if (input >= min && input <= max) return input;
-//            else return getDouble(5.7, 15.7);
+//    public int getInt(int min, int max, String prompt) {
+//        while (true) {
+//            System.out.printf("Please enter an integer between %d and %d.\n", min, max);
+//            int num;
+//            try {
+//
+//                String input = scanner.nextLine();
+//                num = Integer.parseInt(input);
+//            } catch (RuntimeException re) {
+//                System.err.println("You must enter an integer.");
+//                return getInt(min, max);
+//            }
+//            if (num >= min && num <= max)
+//                return num;
+//        }
+//    }
 
+    public double getDouble(double min, double max) {
         //Daniel's method
-        try {
-            while (true) {
-                System.out.printf("Please enter a double between %.2f and %.2f.\n", min, max);
+        while (true) {
+            System.out.printf("Please enter a double between %.2f and %.2f.\n", min, max);
+            double num;
+            try {
 
                 String input = scanner.nextLine();
-                double num = Double.parseDouble(input);
-                if (num >= min && num <= max)
-                    return num;
+                num = Double.parseDouble(input);
+            } catch (RuntimeException re) {
+                System.err.println("That's not a double");
+                return getDouble(min, max);
             }
-        } catch (NumberFormatException nfex) {
-            System.out.println(nfex.getMessage());
-            return getDouble(min, max);
+            if (num >= min && num <= max)
+                return num;
         }
     }
 
