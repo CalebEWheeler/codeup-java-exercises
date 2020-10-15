@@ -18,9 +18,10 @@ public class java_I {
     //    - char
     //    - boolean
     //* I can explain why multiple number primitive types are used.
-    //
+    //    multiple number primitive types are used to allow the programmer
+    //    to utilize less storage space when writing code
     //* I can give an example of implicit and explicit casting.
-    //
+
     //* I can explain the difference between a runtime and compile-time error.
     //
     //* I can identify the major editions of Java.
