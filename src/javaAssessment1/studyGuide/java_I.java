@@ -31,7 +31,7 @@ public class java_I {
     //* I can identify the major editions of Java.
     //    see curriculum - intro to Java
     //* I can define what a Java wrapper class is.
-    //
+    //    a class whose object wraps or contains primitive data types
 
 
     //===================================     SKILLS     ==========================================//
