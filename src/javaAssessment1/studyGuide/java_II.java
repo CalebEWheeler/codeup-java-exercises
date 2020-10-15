@@ -3,7 +3,7 @@ package javaAssessment1.studyGuide;
 public class java_II {
     //=================================     KNOWLEDGE     =========================================//
     //* I can articulate what OOP is.
-    //
+    //      creating objects that contain both data and methods
     //* I can identify the four levels of visibility for a class/field/method and the identifiers used.
     //
     //* I know what class of static methods is often used when working with arrays.
