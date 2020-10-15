@@ -17,7 +17,11 @@ public class java_II {
     //      - static methods belong to a class as a whole, they are accessible through the class
     //          itself, without creating an instance of the class ex: Math.PI || Math.floor()
     //* I can explain the difference between method overloading and method overriding.
-    //
+    //      - method overloading is creating another method with the same name, but passing different
+    //          parameters
+    //      - method overriding allows subclasses to define a method with the same name, return type,
+    //          and parameters as in the superclass. Allows the subclass to provide it's own
+    //          implementation of a method
     //* I can identify the four pillars of object-oriented programming and give examples of each one.
     //
     //* I can describe the differences between interfaces and abstract classes and their use cases.
