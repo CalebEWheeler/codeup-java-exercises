@@ -10,7 +10,7 @@ public class java_II {
     //      - protected (accessible everywhere besides outside of a project)
     //      - no modifier (package private) - accessible within the same package
     //* I know what class of static methods is often used when working with arrays.
-    //
+    //      you want an array to be static so it belongs to a class and can be accessed through the class
     //* I can explain the difference between static (class) fields/methods and instance fields/methods.
     //
     //* I can explain the difference between method overloading and method overriding.
