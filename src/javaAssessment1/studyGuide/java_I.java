@@ -6,17 +6,18 @@ public class java_I {
     //    Programmer>writes code to .java file>input from file to compiler>output from compiler to
     //    .class file>.class file runs on JVM(java virtual machine)>JVM runs on OS.
     //* I can explain the difference between a primitive type and a reference type in Java.
-
+    //    A primitive type is a data type that is a value
+    //    A reference type refer to an object or an array(they have a default value of "null"
     //* I can name several primitive types in Java.
-
+    //
     //* I can explain why multiple number primitive types are used.
-
+    //
     //* I can give an example of implicit and explicit casting.
-
+    //
     //* I can explain the difference between a runtime and compile-time error.
-
+    //
     //* I can identify the major editions of Java.
-
+    //
     //* I can define what a Java wrapper class is.
 
 

@@ -3,28 +3,28 @@ package javaAssessment1.studyGuide;
 public class java_II {
     //=================================     KNOWLEDGE     =========================================//
     //* I can articulate what OOP is.
-
+    //
     //* I can identify the four levels of visibility for a class/field/method and the identifiers used.
-
+    //
     //* I know what class of static methods is often used when working with arrays.
-
+    //
     //* I can explain the difference between static (class) fields/methods and instance fields/methods.
-
+    //
     //* I can explain the difference between method overloading and method overriding.
-
+    //
     //* I can identify the four pillars of object-oriented programming and give examples of each one.
-
+    //
     //* I can describe the differences between interfaces and abstract classes and their use cases.
-
+    //
     //* I can generally describe what the Java Collections Framework is and specifically
     //      talk about the differences between a list, set, and map.
-
+    //
     //* I can explain the difference between a checked and unchecked exception.
-
+    //
     //* I can explain what a Java annotation is, why they are used, and give examples.
-
+    //
     //* I can explain the difference between the throws and throw keywords with regard to exceptions.
-
+    //
 
     //===================================     SKILLS     ==========================================//
     //* I can write a class that contains both static and instance fields and
