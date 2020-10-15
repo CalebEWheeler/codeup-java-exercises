@@ -21,7 +21,10 @@ public class java_I {
     //    multiple number primitive types are used to allow the programmer
     //    to utilize less storage space when writing code
     //* I can give an example of implicit and explicit casting.
-
+    //    implicit casting - int myInteger = 900;
+    //                       long morePrecise = myInteger;
+    //    explicit casting - double pi = 3.14159;
+    //                       int almostPi = (int) pi;
     //* I can explain the difference between a runtime and compile-time error.
     //
     //* I can identify the major editions of Java.
