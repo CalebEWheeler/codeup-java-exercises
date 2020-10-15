@@ -12,7 +12,10 @@ public class java_II {
     //* I know what class of static methods is often used when working with arrays.
     //      you want an array to be static so it belongs to a class and can be accessed through the class
     //* I can explain the difference between static (class) fields/methods and instance fields/methods.
-    //
+    //      - instance methods allow you to create instance objects with different values for
+    //          their instance fields
+    //      - static methods belong to a class as a whole, they are accessible through the class
+    //          itself, without creating an instance of the class ex: Math.PI || Math.floor()
     //* I can explain the difference between method overloading and method overriding.
     //
     //* I can identify the four pillars of object-oriented programming and give examples of each one.
