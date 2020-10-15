@@ -5,7 +5,10 @@ public class java_II {
     //* I can articulate what OOP is.
     //      creating objects that contain both data and methods
     //* I can identify the four levels of visibility for a class/field/method and the identifiers used.
-    //
+    //      - public (accessible everywhere)
+    //      - private (only accessible within the class that defines it)
+    //      - protected (accessible everywhere besides outside of a project)
+    //      - no modifier (package private) - accessible within the same package
     //* I know what class of static methods is often used when working with arrays.
     //
     //* I can explain the difference between static (class) fields/methods and instance fields/methods.
