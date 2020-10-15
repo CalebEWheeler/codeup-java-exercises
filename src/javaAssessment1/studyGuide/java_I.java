@@ -3,7 +3,8 @@ package javaAssessment1.studyGuide;
 public class java_I {
     //=================================     KNOWLEDGE     =========================================//
     //* I can explain how Java code runs: from being written to executing on an operating system.
-
+    //    Programmer>writes code to .java file>input from file to compiler>output from compiler to
+    //    .class file>.class file runs on JVM(java virtual machine)>JVM runs on OS.
     //* I can explain the difference between a primitive type and a reference type in Java.
 
     //* I can name several primitive types in Java.
