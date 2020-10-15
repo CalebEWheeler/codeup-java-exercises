@@ -9,7 +9,14 @@ public class java_I {
     //    A primitive type is a data type that is a value
     //    A reference type refer to an object or an array(they have a default value of "null"
     //* I can name several primitive types in Java.
-    //
+    //    - byte
+    //    - short
+    //    - int
+    //    - long
+    //    - float
+    //    - double
+    //    - char
+    //    - boolean
     //* I can explain why multiple number primitive types are used.
     //
     //* I can give an example of implicit and explicit casting.
