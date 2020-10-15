@@ -9,9 +9,9 @@ public class InputTest {
 //        else
 //            System.out.println("It actually said no");
         System.out.println(userInput.getInt(10, 20));
-        System.out.println(userInput.getInt());
+//        System.out.println(userInput.getInt());
         System.out.println(userInput.getDouble(5.7, 15.7));
-        System.out.println(userInput.getDouble() + ": is a valid input!");
+//        System.out.println(userInput.getDouble() + ": is a valid input!");
     }
 
 
