@@ -26,11 +26,12 @@ public class java_I {
     //    explicit casting - double pi = 3.14159;
     //                       int almostPi = (int) pi;
     //* I can explain the difference between a runtime and compile-time error.
-    //
+    //    runtime error - error will occur when the code is running
+    //    compile-time error - due to inaccuracies in code and code will not compile
     //* I can identify the major editions of Java.
-    //
+    //    see curriculum - intro to Java
     //* I can define what a Java wrapper class is.
-
+    //
 
 
     //===================================     SKILLS     ==========================================//
