@@ -1,21 +1,34 @@
 package javaAssessment1.studyGuide;
 
 public class java_II {
+    //MISSED QUESTIONS FROM QUIZ:
+    //* Which one of the following definitions is invalid?
+    //      abstract class Marker {
+    //    public void write();
+    //}
+    //* What is the difference between an abstract class and an interface?
+    //      An interface only contains abstract methods, while an abstract class can
+    //      have both abstract methods and regular methods.
+    //* Can i write the code for the procedure of a method in a Java Interface? No you can't
+    //* Programming which declares variables or methods of an interface or abstract class rather than concrete classes to avoid tightly coupled code.
+    //    polymorphism
+    //* You can instantiate an abstract class.
+    //    False - Cannot be directly instantiated since it is missing implementation details
     //=================================     KNOWLEDGE     =========================================//
     //* I can articulate what OOP is.
     //      creating objects that contain both data and methods
     //* I can identify the four levels of visibility for a class/field/method and the identifiers used.
     //      - public (accessible everywhere)
     //      - private (only accessible within the class that defines it)
-    //      - protected (accessible everywhere besides outside of a project)
+    //      - protected (accessible everywhere besides outside of a project) fields and methods are available to the class that defines them, as well as any subclasses.
     //      - no modifier (package private) - accessible within the same package
     //* I know what class of static methods is often used when working with arrays.
     //      you want an array to be static so it belongs to a class and can be accessed through the class
     //* I can explain the difference between static (class) fields/methods and instance fields/methods.
     //      - instance methods allow you to create instance objects with different values for
-    //          their instance fields
+    //          their instance fields, can carry over to other classes
     //      - static methods belong to a class as a whole, they are accessible through the class
-    //          itself, without creating an instance of the class ex: Math.PI || Math.floor()
+    //          itself, without creating an instance of the class ex: Math.PI || Math.floor() || Class.method()
     //* I can explain the difference between method overloading and method overriding.
     //      - method overloading is creating another method with the same name, but passing different
     //          parameters
@@ -23,7 +36,10 @@ public class java_II {
     //          and parameters as in the superclass. Allows the subclass to provide it's own
     //          implementation of a method
     //* I can identify the four pillars of object-oriented programming and give examples of each one.
-    //
+    //      - Abstraction (abstract classes/interfaces/methods hiding unwanted info) ex: public abstract void method() {}
+    //      - Polymorphism (
+    //      - Inheritance (
+    //      - Encapsulation (hiding data of a single entity from abstract classes/interfaces/methods) ex: private int number;
     //* I can describe the differences between interfaces and abstract classes and their use cases.
     //
     //* I can generally describe what the Java Collections Framework is and specifically
