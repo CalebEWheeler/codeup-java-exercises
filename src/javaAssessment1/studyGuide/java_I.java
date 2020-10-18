@@ -85,35 +85,35 @@ public class java_I {
 //        }
 
         //TERNARY
-        System.out.println();
-        System.out.println("Enter 2: ");
-        int userInput = input.getInt();
-        int checkInt = 2;
-        int here = (userInput == checkInt) ? userInput : -1;
-        System.out.printf("The number you entered is: %d", here);
-        System.out.println();
+//        System.out.println();
+//        System.out.println("Enter 2: ");
+//        int userInput = input.getInt();
+//        int checkInt = 2;
+//        int here = (userInput == checkInt) ? userInput : -1;
+//        System.out.printf("The number you entered is: %d", here);
+//        System.out.println();
 
         //WHILE LOOP
-        int j = numbers[0];
-        while (j <= numbers.length) {
-            System.out.printf("While loop: %d", j);
-            j++;
-        }
-        System.out.println();
+//        int j = numbers[0];
+//        while (j <= numbers.length) {
+//            System.out.printf("While loop: %d", j);
+//            j++;
+//        }
+//        System.out.println();
 
         //DO WHILE LOOP
-        int k = numbers[0];
-        do {
-            System.out.printf("Do while loop: %d", k);
-            k++;
-        } while (k <= numbers.length);
-        System.out.println();
+//        int k = numbers[0];
+//        do {
+//            System.out.printf("Do while loop: %d", k);
+//            k++;
+//        } while (k <= numbers.length);
+//        System.out.println();
 
         //FOR LOOP
-        for (int i = numbers[0]; i <= numbers.length; i++) {
-            System.out.printf("For loop: %d\n", i);
-        }
-        System.out.println();
+//        for (int i = numbers[0]; i <= numbers.length; i++) {
+//            System.out.printf("For loop: %d\n", i);
+//        }
+//        System.out.println();
 
         //ENHANCED FOR LOOP
 //        for (int number : numbers) {
@@ -137,7 +137,10 @@ public class java_I {
         //  - explicit casting ex:
         //      double doubleNum = (int) num;
         //* I can convert a numeric string to a number and a number to a numeric string.
-
+        //  - numeric string to a number ex:
+        //      String numToString = Integer.toString(12);
+        //  - numeric string to a num ex:
+        //      int stringToNum = Integer.parseInt(num);
         //* I can define a constant.
 
         //* I can write a program that takes in user input and returns an output to the user.
