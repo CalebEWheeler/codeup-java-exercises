@@ -37,9 +37,9 @@ public class java_II {
     //          implementation of a method
     //* I can identify the four pillars of object-oriented programming and give examples of each one.
     //      - Abstraction (abstract classes/interfaces/methods hiding unwanted info) ex: public abstract void method() {}
-    //      - Polymorphism (
-    //      - Inheritance (
-    //      - Encapsulation (hiding data of a single entity from abstract classes/interfaces/methods) ex: private int number;
+    //      - Polymorphism (engine - polymorphism(I6, I4, I5, v6, v8, v10) defining what kind of engine...
+    //      - Inheritance (mutants <= x-men) x-men are all mutants, but not all mutants are x-men...
+    //      - Encapsulation (hiding data in a private method encapsulates) ex: private int number;
     //* I can describe the differences between interfaces and abstract classes and their use cases.
     //
     //* I can generally describe what the Java Collections Framework is and specifically
@@ -48,7 +48,10 @@ public class java_II {
     //* I can explain the difference between a checked and unchecked exception.
     //
     //* I can explain what a Java annotation is, why they are used, and give examples.
-    //
+    //      notes developers use to know what is going on with code
+    //      - Deprecated (notation for old method)
+    //      - Override  (notation that method is being overriden elsewhere)
+    //      - SuppressWarnings (notation that will suppress any warnings)
     //* I can explain the difference between the throws and throw keywords with regard to exceptions.
     //
 
@@ -89,6 +92,11 @@ public class java_II {
 
 
     public static void main(String[] args) {
+            String Str = new String("Welcome-to-Tutorialspoint.com"); //userInput
+
+            for (String retval: Str.replace("-", " | ").split("-")) {
+                System.out.print(retval);
+            }
 
     }
 }

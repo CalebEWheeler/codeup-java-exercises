@@ -19,7 +19,8 @@ public class java_I {
     //    - boolean
     //* I can explain why multiple number primitive types are used.
     //    multiple number primitive types are used to allow the programmer
-    //    to utilize less storage space when writing code
+    //    to utilize less storage space when writing code.
+    //    Comes down to java compilation and how it allocates data.
     //* I can give an example of implicit and explicit casting.
     //    implicit casting - int myInteger = 900;
     //                       long morePrecise = myInteger;
@@ -57,6 +58,6 @@ public class java_I {
 
 
     public static void main(String[] args) {
-
+//        System.out.println("Hello, world");
     }
 }
