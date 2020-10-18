@@ -1,5 +1,11 @@
 package javaAssessment1.studyGuide;
 
+
+import org.w3c.dom.ls.LSOutput;
+import util.Input;
+
+import java.lang.reflect.Array;
+
 public class java_I {
     //=================================     KNOWLEDGE     =========================================//
     //* I can explain how Java code runs: from being written to executing on an operating system.
@@ -36,28 +42,99 @@ public class java_I {
 
 
     //===================================     SKILLS     ==========================================//
-    //* I can write a hello world Java program from scratch.
-
-    //* I can write Java control statements (if, if/else, switch, ternary) and loops (while, do-while, for, for-each) from memory.
-
-    //* I can write examples of the 8 Java primitive types.
-
-    //* I can write examples of explicit casting and implicit casting.
-
-    //* I can convert a numeric string to a number and a number to a numeric string.
-
-    //* I can define a constant.
-
-    //* I can write a program that takes in user input and returns an output to the user.
-
-    //* I can compare two string values.
-
-    //* I can write out a program comprised of multiple methods.
-
-    //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
-
-
     public static void main(String[] args) {
-//        System.out.println("Hello, world");
+        //* I can write a hello world Java program from scratch.
+        //System.out.println("Hello, world");
+
+        //* I can write Java control statements (if, if/else, switch, ternary) and loops (while, do-while, for, for-each) from memory.
+
+        int[] numbers = {1, 2, 3, 4, 5};
+        String name = "aName";
+        Input input = new Input();
+
+        //IF/ELSE
+//        System.out.println("Enter the string: aName");
+//        if (input.getString().equals(name)) {
+//            System.out.printf("name = %s", name);
+//        } else {
+//            System.out.printf("name != %s", name);
+//        }
+
+        //SWITCH
+//        System.out.println("Please enter a number between 1-5");
+//        int userInput = input.getInt();
+//        switch (userInput) {
+//            case 1:
+//                System.out.printf("You entered the number: %d", userInput);
+//                break;
+//            case 2:
+//                System.out.printf("You entered the number: %d", userInput);
+//                break;
+//            case 3:
+//                System.out.printf("You entered the number: %d", userInput);
+//                break;
+//            case 4:
+//                System.out.printf("You entered the number: %d", userInput);
+//                break;
+//            case 5:
+//                System.out.printf("You entered the number: %d", userInput);
+//                break;
+//            default:
+//                System.out.printf("%d is not a number between 1-5", userInput);
+//
+//        }
+
+        //TERNARY
+        System.out.println();
+        System.out.println("Enter 2: ");
+        int userInput = input.getInt();
+        int checkInt = 2;
+        int here = (userInput == checkInt) ? userInput : -1;
+        System.out.printf("The number you entered is: %d", here);
+        System.out.println();
+
+        //WHILE LOOP
+        int j = numbers[0];
+        while (j <= numbers.length) {
+            System.out.printf("While loop: %d", j);
+            j++;
+        }
+        System.out.println();
+
+        //DO WHILE LOOP
+        int k = numbers[0];
+        do {
+            System.out.printf("Do while loop: %d", k);
+            k++;
+        } while (k <= numbers.length);
+        System.out.println();
+
+        //FOR LOOP
+        for (int i = numbers[0]; i <= numbers.length; i++) {
+            System.out.printf("For loop: %d\n", i);
+        }
+        System.out.println();
+
+        //ENHANCED FOR LOOP
+//        for (int number : numbers) {
+//            System.out.printf("Enhanced for loop: %d\n", number);
+//        }
+
+        //* I can write examples of the 8 Java primitive types.
+
+        //* I can write examples of explicit casting and implicit casting.
+
+        //* I can convert a numeric string to a number and a number to a numeric string.
+
+        //* I can define a constant.
+
+        //* I can write a program that takes in user input and returns an output to the user.
+
+        //* I can compare two string values.
+
+        //* I can write out a program comprised of multiple methods.
+
+        //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
     }
 }
+
