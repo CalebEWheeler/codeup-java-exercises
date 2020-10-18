@@ -131,7 +131,11 @@ public class java_I {
         //  - byte
 
         //* I can write examples of explicit casting and implicit casting.
-        //  -
+        //  - implicit casting ex:
+        //      int num = 0;
+        //      double doubleNum = num;
+        //  - explicit casting ex:
+        //      double doubleNum = (int) num;
         //* I can convert a numeric string to a number and a number to a numeric string.
 
         //* I can define a constant.
