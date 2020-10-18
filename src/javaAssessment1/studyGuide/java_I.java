@@ -146,17 +146,25 @@ public class java_I {
         //  - final int num = 21;
 
         //* I can write a program that takes in user input and returns an output to the user.
-          Input userInput = new Input();
-          System.out.println(userInput.getString());
+//          Input userInput = new Input();
+//          System.out.println(userInput.getString());
 
         //* I can compare two string values.
-        //  -
+        Input input2 = new Input();
+        Input input3 = new Input();
+        System.out.println("Enter a string: ");
+        String hi = input2.getString();
+        System.out.println("Enter another string: ");
+        String hi1 = input3.getString();
+        if (hi.equals(hi1)) {System.out.println("The two inputs are the same!");}
+        else {System.out.println("They arent equal...");}
 
-        //* I can write out a program comprised of multiple methods.
-        //  -
+            //* I can write out a program comprised of multiple methods.
+            //  -
 
-        //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
-        //  -
+            //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
+            //  -
+
     }
 }
 
