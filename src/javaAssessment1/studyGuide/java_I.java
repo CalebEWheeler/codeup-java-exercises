@@ -121,9 +121,17 @@ public class java_I {
 //        }
 
         //* I can write examples of the 8 Java primitive types.
+        //  - int
+        //  - short
+        //  - long
+        //  - float
+        //  - double
+        //  - char
+        //  - boolean
+        //  - byte
 
         //* I can write examples of explicit casting and implicit casting.
-
+        //  -
         //* I can convert a numeric string to a number and a number to a numeric string.
 
         //* I can define a constant.
