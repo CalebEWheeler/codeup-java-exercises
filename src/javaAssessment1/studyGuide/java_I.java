@@ -141,15 +141,22 @@ public class java_I {
         //      String numToString = Integer.toString(12);
         //  - numeric string to a num ex:
         //      int stringToNum = Integer.parseInt(num);
+
         //* I can define a constant.
+        //  - final int num = 21;
 
         //* I can write a program that takes in user input and returns an output to the user.
+          Input userInput = new Input();
+          System.out.println(userInput.getString());
 
         //* I can compare two string values.
+        //  -
 
         //* I can write out a program comprised of multiple methods.
+        //  -
 
         //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
+        //  -
     }
 }
 
