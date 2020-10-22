@@ -94,11 +94,18 @@ public class java_II {
     }
 
     public static int difference(int num1, int num2) {
-        return 0;
+        return Math.abs((num1) - (num2));
+    }
+
+    public static double difference(double num1, double num2) {
+        return Math.abs((num1) - (num2));
     }
 
     public static void main(String[] args) {
         System.out.println(cube(2));
+        System.out.println("difference(6,8) = " + difference(6,8));
+        System.out.println("difference(-2,7) = " + difference(-2,7));
+        System.out.println("difference(6.8, -1.2) = " + difference(6.8, -1.2));
 
     }
 }
