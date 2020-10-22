@@ -160,13 +160,13 @@ public class java_I {
         //  else {System.out.println("They arent equal...");}
 
         //* I can get the length of string, trim it, get a portion of the string, create a new string replacing some portion of it.
-            String stringLength = "     Hi there friends";
-            System.out.printf("The length of stringLength is : %d\n", stringLength.length());
-            String trimStringLength = stringLength.trim();
-            System.out.printf("stringLength = %s\n", stringLength);
-            System.out.printf("stringLength trimmed = %s\n", trimStringLength);
-            String stringLengthPortion = trimStringLength.replace("friends", "pal");
-            System.out.println(stringLengthPortion);
+//            String stringLength = "     Hi there friends";
+//            System.out.printf("The length of stringLength is : %d\n", stringLength.length());
+//            String trimStringLength = stringLength.trim();
+//            System.out.printf("stringLength = %s\n", stringLength);
+//            System.out.printf("stringLength trimmed = %s\n", trimStringLength);
+//            String stringLengthPortion = trimStringLength.replace("friends", "pal");
+//            System.out.println(stringLengthPortion);
     }
 
     //* I can write out a program comprised of multiple methods.

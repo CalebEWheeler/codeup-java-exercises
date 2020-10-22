@@ -19,12 +19,6 @@ public class Student {
     }
 
     public double getGradeAverage() {
-//        ArrayList<Integer> grades = getGrades();
-//        double addedGrades = 0;
-//        for (double grade : grades) {
-//            addedGrades += grade;
-//        }
-//        return addedGrades / this.grades.size();
         //  -- Fer's Solution --
          double sum = 0;
          for (int grade : this.grades) {

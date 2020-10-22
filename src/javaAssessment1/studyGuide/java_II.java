@@ -59,6 +59,7 @@ public class java_II {
     //* I can write a class that contains both static and instance fields and
     //      methods, constructors, setters and getters.
 
+
     //* I can write a program composed of multiple classes requiring instantiation
     //      (not just using classes as groups of static methods).
 
@@ -88,15 +89,16 @@ public class java_II {
     //      but use instances of objects that extend from these parent classes or implement
     //      these interfaces (Polymorphism).
 
+    public static int cube(int input) {
+        return input * input * input;
+    }
 
-
+    public static int difference(int num1, int num2) {
+        return 0;
+    }
 
     public static void main(String[] args) {
-            String Str = new String("Welcome-to-Tutorialspoint.com"); //userInput
-
-            for (String retval: Str.replace("-", " | ").split("-")) {
-                System.out.print(retval);
-            }
+        System.out.println(cube(2));
 
     }
 }
