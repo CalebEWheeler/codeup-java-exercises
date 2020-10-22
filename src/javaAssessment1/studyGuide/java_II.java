@@ -1,5 +1,8 @@
 package javaAssessment1.studyGuide;
 
+
+import java.util.Arrays;
+
 public class java_II {
     //MISSED QUESTIONS FROM QUIZ:
     //* Which one of the following definitions is invalid?
@@ -101,11 +104,20 @@ public class java_II {
         return Math.abs((num1) - (num2));
     }
 
+    public static double average(int[] numbers) {
+        double sum = 0;
+        for (double number : numbers) {
+            sum += number;
+        }
+        return sum / numbers.length;
+    }
+
     public static void main(String[] args) {
         System.out.println(cube(2));
         System.out.println("difference(6,8) = " + difference(6,8));
         System.out.println("difference(-2,7) = " + difference(-2,7));
         System.out.println("difference(6.8, -1.2) = " + difference(6.8, -1.2));
-
+        int[] integers = {100,95,95,100};
+        System.out.println("average(new int[] = {100,95,95,100}) = " + average(integers));
     }
 }
