@@ -125,6 +125,21 @@ public class java_II {
         return map;
     }
 
+    public static ArrayList<Device> blackFridaySale(ArrayList<Device> devices) {
+        ArrayList<Device> discountDevices = new ArrayList<>();
+        for (Device phone : devices) {
+            double discount = phone.getPrice() - (phone.getPrice() * .05);
+            if (phone.getBrand().equals("Apple")) {
+                phone.setPrice(Math.round(discount * 100.0) / 100.0);
+            }
+            else if (phone.getBrand().equals("Microsoft")) {
+                phone.setPrice(Math.round(discount * 100.0) / 100.0);
+            }
+            discountDevices.add(phone);
+        }
+        return discountDevices;
+    }
+
     public static void main(String[] args) {
         System.out.println(cube(2));
         System.out.println("difference(6,8) = " + difference(6,8));
@@ -139,10 +154,12 @@ public class java_II {
         devices.add(phone);
         devices.add(phone2);
         HashMap<String, Device> inventory = java_II.createInventory(devices);
-        System.out.println(inventory.get("S0").getBrand());
-        System.out.println(inventory.get("S1").getBrand());
+        System.out.println(inventory.get("S0").getPrice());
+        System.out.println(inventory.get("S1").getPrice());
 
-
+        blackFridaySale(devices);
+        System.out.println(phone.getPrice());
+        System.out.println(phone2.getPrice());
 
     }
 }
