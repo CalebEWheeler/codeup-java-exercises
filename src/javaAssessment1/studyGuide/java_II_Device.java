@@ -27,6 +27,9 @@ public class java_II_Device implements TextEditor{
     public void setBrand(String brand) {this.brand = brand;}
     public void setPrice(double price) {this.price = price;}
 
+    public String openTextFile(String filename) {
+        return "Opening $FILE with $EDITOR";
+    }
 
     public static void main(String[] args) {
         java_II_Device phone = new java_II_Device("galaxy", "samsung", 0);
