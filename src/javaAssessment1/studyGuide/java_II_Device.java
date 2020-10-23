@@ -1,6 +1,6 @@
 package javaAssessment1.studyGuide;
 
-public class java_II_Device {
+public class java_II_Device implements TextEditor{
     private String type;
     private String brand;
     private double price;
@@ -26,6 +26,7 @@ public class java_II_Device {
     public void setType(String type) {this.type = type;}
     public void setBrand(String brand) {this.brand = brand;}
     public void setPrice(double price) {this.price = price;}
+
 
     public static void main(String[] args) {
         java_II_Device phone = new java_II_Device("galaxy", "samsung", 0);
