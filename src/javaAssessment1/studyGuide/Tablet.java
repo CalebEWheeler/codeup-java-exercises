@@ -7,4 +7,13 @@ public class Tablet extends java_II_Device{
         super(type, brand, price);
         this.physicalKeyboard = physicalKeyboard;
     }
+
+    public boolean hasPhysicalKeyboard() {
+        return this.physicalKeyboard;
+    }
+
+    public static void main(String[] args) {
+        Tablet ipad = new Tablet("ipad pro", "apple", 999.99, true);
+        System.out.println("ipad.hasPhysicalKeyboard() = " + ipad.hasPhysicalKeyboard());
+    }
 }
