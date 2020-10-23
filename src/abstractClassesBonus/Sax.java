@@ -1,8 +1,16 @@
 package abstractClassesBonus;
 
 public abstract class Sax extends MusicalInstrument implements Tuneable, VolumeAdjustable{
-    public Sax(String instrumentClassification) {
+    private String saxType;
+
+    public Sax(String instrumentClassification, String saxType) {
         super(instrumentClassification);
+        this.saxType = saxType;
+    }
+
+    public String getSaxType() {return this.saxType;}
+    public void setSaxType(String saxType) {
+        this.saxType = saxType;
     }
 
     public void tuneInstrument() {
