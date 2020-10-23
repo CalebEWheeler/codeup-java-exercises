@@ -1,7 +1,7 @@
 package javaAssessment1.studyGuide;
 
-
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class java_II {
     //MISSED QUESTIONS FROM QUIZ:
@@ -112,6 +112,19 @@ public class java_II {
         return sum / numbers.length;
     }
 
+
+
+    public static HashMap<String, Device> createInventory(ArrayList<Device> devices) {
+        HashMap<String, Device> map = new HashMap<>();
+        int counter = 0;
+        for (Device phone : devices) {
+            String serNum = "S"+counter;
+            map.put(serNum, phone);
+            counter++;
+        }
+        return map;
+    }
+
     public static void main(String[] args) {
         System.out.println(cube(2));
         System.out.println("difference(6,8) = " + difference(6,8));
@@ -119,5 +132,17 @@ public class java_II {
         System.out.println("difference(6.8, -1.2) = " + difference(6.8, -1.2));
         int[] integers = {100,95,95,100};
         System.out.println("average(new int[] = {100,95,95,100}) = " + average(integers));
+
+        ArrayList<Device> devices = new ArrayList<>();
+        Device phone = new Device("IphoneX", "Apple", 849.99);
+        Device phone2 = new Device("somePhone", "Microsoft", 599.99);
+        devices.add(phone);
+        devices.add(phone2);
+        HashMap<String, Device> inventory = java_II.createInventory(devices);
+        System.out.println(inventory.get("S0").getBrand());
+        System.out.println(inventory.get("S1").getBrand());
+
+
+
     }
 }

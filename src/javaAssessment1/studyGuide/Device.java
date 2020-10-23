@@ -1,11 +1,11 @@
 package javaAssessment1.studyGuide;
 
-public class java_II_Device implements TextEditor{
+public class Device implements TextEditor{
     private String type;
     private String brand;
     private double price;
 
-    public java_II_Device(String type, String brand, double price) throws IllegalArgumentException{
+    public Device(String type, String brand, double price) throws IllegalArgumentException{
         this.type = type;
         this.brand = brand;
         this.price = price;
@@ -40,8 +40,8 @@ public class java_II_Device implements TextEditor{
     }
 
     public static void main(String[] args) {
-        java_II_Device phone = new java_II_Device("IphoneX", "Apple", 849.99);
-        java_II_Device phone2 = new java_II_Device("somePhone", "Microsoft", 599.99);
+        Device phone = new Device("IphoneX", "Apple", 849.99);
+        Device phone2 = new Device("somePhone", "Microsoft", 599.99);
 
         System.out.println("phone.openTextFile(\"contacts.txt\") = " + phone.openTextFile("contacts.txt"));
         System.out.println("phone2.openTextFile(\"studyGuide.txt\") = " + phone2.openTextFile("studyGuide.txt"));
