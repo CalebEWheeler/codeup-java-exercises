@@ -1,5 +1,5 @@
 package abstractClassesBonus;
 
-abstract class MusicalInstrument {
+abstract class MusicalInstrument implements Playable{
 
 }
