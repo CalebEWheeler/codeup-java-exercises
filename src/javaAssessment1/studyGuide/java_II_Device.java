@@ -28,10 +28,23 @@ public class java_II_Device implements TextEditor{
     public void setPrice(double price) {this.price = price;}
 
     public String openTextFile(String filename) {
-        return "Opening $FILE with $EDITOR";
+        String message = "Opening $FILE with $EDITOR";
+
+        if (this.brand.equals("Apple")) {
+            return message.replace("$FILE", filename).replace("$EDITOR", "TextEdit");
+        }
+        else if (this.brand.equals("Microsoft")) {
+            return message.replace("$FILE", filename).replace("$EDITOR", "Notepad");
+        }
+        else return message;
     }
 
     public static void main(String[] args) {
-        java_II_Device phone = new java_II_Device("galaxy", "samsung", 0);
+        java_II_Device phone = new java_II_Device("IphoneX", "Apple", 849.99);
+        java_II_Device phone2 = new java_II_Device("somePhone", "Microsoft", 599.99);
+
+        System.out.println("phone.openTextFile(\"contacts.txt\") = " + phone.openTextFile("contacts.txt"));
+        System.out.println("phone2.openTextFile(\"studyGuide.txt\") = " + phone2.openTextFile("studyGuide.txt"));
+
     }
 }
